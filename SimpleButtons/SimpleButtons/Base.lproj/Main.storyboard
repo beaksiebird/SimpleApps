@@ -73,8 +73,7 @@
                                     <color key="titleShadowColor" red="0.84657118055555547" green="0.84657118055555547" blue="0.84657118055555547" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="Number:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0UU-Q1-KtE"/>
-                                    <action selector="number:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2lu-Xx-NhP"/>
+                                    <action selector="Number:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p1A-Pp-EsR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5N-zq-mT9">
@@ -99,18 +98,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Number:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pSK-hB-htW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfX-zp-mmf">
-                                <rect key="frame" x="313" y="384" width="100" height="80"/>
-                                <color key="backgroundColor" red="1" green="0.4456011319" blue="0.12625238019999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="X">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Operation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ggi-V2-5xp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhU-wU-rPo">
@@ -248,19 +235,32 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfX-zp-mmf">
+                                <rect key="frame" x="313" y="384" width="100" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.4456011319" blue="0.12625238019999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Operation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ggi-V2-5xp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="0.20000000000000001" y="0.20000000000000001" width="0.69999999999999973" height="0.69999999999999973"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="Screen" destination="NY1-ZF-PWj" id="MZy-0M-8zL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-83" y="-620"/>
+            <point key="canvasLocation" x="-85" y="-624"/>
         </scene>
     </scenes>
 </document>
