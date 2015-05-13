@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD7A5F171B038F1E00B01B9F /* ReposTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A5F161B038F1E00B01B9F /* ReposTableViewController.swift */; };
+		CD7A5F191B0397AF00B01B9F /* GithubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A5F181B0397AF00B01B9F /* GithubRequest.swift */; };
+		CD7A5F1B1B03AC0C00B01B9F /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A5F1A1B03AC0C00B01B9F /* AddFriendViewController.swift */; };
 		CD80AFB51B02391700B395D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80AFB41B02391700B395D1 /* AppDelegate.swift */; };
 		CD80AFBA1B02391700B395D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD80AFB81B02391700B395D1 /* Main.storyboard */; };
 		CD80AFBC1B02391700B395D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD80AFBB1B02391700B395D1 /* Images.xcassets */; };
@@ -15,7 +18,6 @@
 		CD80AFD51B02401500B395D1 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80AFD41B02401500B395D1 /* FriendsTableViewController.swift */; };
 		CD80AFD71B0278E300B395D1 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80AFD61B0278E300B395D1 /* FriendTableViewCell.swift */; };
 		CD80AFD91B02975F00B395D1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80AFD81B02975F00B395D1 /* ProfileViewController.swift */; };
-		CD80AFDD1B02A2E600B395D1 /* RepoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD80AFDC1B02A2E600B395D1 /* RepoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD7A5F161B038F1E00B01B9F /* ReposTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposTableViewController.swift; sourceTree = "<group>"; };
+		CD7A5F181B0397AF00B01B9F /* GithubRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRequest.swift; sourceTree = "<group>"; };
+		CD7A5F1A1B03AC0C00B01B9F /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		CD80AFAF1B02391700B395D1 /* GithubFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD80AFB31B02391700B395D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD80AFB41B02391700B395D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +46,6 @@
 		CD80AFD41B02401500B395D1 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		CD80AFD61B0278E300B395D1 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		CD80AFD81B02975F00B395D1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		CD80AFDC1B02A2E600B395D1 /* RepoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,9 @@
 				CD80AFD41B02401500B395D1 /* FriendsTableViewController.swift */,
 				CD80AFD61B0278E300B395D1 /* FriendTableViewCell.swift */,
 				CD80AFD81B02975F00B395D1 /* ProfileViewController.swift */,
-				CD80AFDC1B02A2E600B395D1 /* RepoTableViewController.swift */,
+				CD7A5F161B038F1E00B01B9F /* ReposTableViewController.swift */,
+				CD7A5F181B0397AF00B01B9F /* GithubRequest.swift */,
+				CD7A5F1A1B03AC0C00B01B9F /* AddFriendViewController.swift */,
 				CD80AFB21B02391700B395D1 /* Supporting Files */,
 			);
 			path = GithubFriends;
@@ -221,11 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7A5F1B1B03AC0C00B01B9F /* AddFriendViewController.swift in Sources */,
 				CD80AFD71B0278E300B395D1 /* FriendTableViewCell.swift in Sources */,
 				CD80AFD51B02401500B395D1 /* FriendsTableViewController.swift in Sources */,
 				CD80AFD91B02975F00B395D1 /* ProfileViewController.swift in Sources */,
-				CD80AFDD1B02A2E600B395D1 /* RepoTableViewController.swift in Sources */,
+				CD7A5F191B0397AF00B01B9F /* GithubRequest.swift in Sources */,
 				CD80AFB51B02391700B395D1 /* AppDelegate.swift in Sources */,
+				CD7A5F171B038F1E00B01B9F /* ReposTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +429,7 @@
 				CD80AFD01B02391700B395D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD80AFD11B02391700B395D1 /* Build configuration list for PBXNativeTarget "GithubFriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +438,7 @@
 				CD80AFD31B02391700B395D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

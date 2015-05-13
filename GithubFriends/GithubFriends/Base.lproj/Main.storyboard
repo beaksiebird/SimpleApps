@@ -5,88 +5,16 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Friends Table View Controller-->
+        <!--My Friends-->
         <scene sceneID="uWl-4i-lr1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t8w-IS-kkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="x5Z-hG-O8F" customClass="FriendsTableViewController" customModule="GithubFriends" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TJS-DK-uNY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="TJS-DK-uNY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="VGw-DP-AJO">
-                            <rect key="frame" x="0.0" y="64" width="600" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSM-Kq-9LM">
-                                    <rect key="frame" x="10" y="10" width="470" height="40"/>
-                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="jXk-5T-eFD"/>
-                                        <constraint firstAttribute="width" constant="470" id="m47-k8-5j5"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="jXk-5T-eFD"/>
-                                            <exclude reference="m47-k8-5j5"/>
-                                        </mask>
-                                    </variation>
-                                </textField>
-                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2v-BX-dSC">
-                                    <rect key="frame" x="488" y="12" width="100" height="40"/>
-                                    <color key="backgroundColor" red="0.99236505679999998" green="0.12739646600000001" blue="0.19730592150000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="100" id="EOr-01-lMd"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="14"/>
-                                    <state key="normal" title="Add Friend">
-                                        <color key="titleColor" red="0.0021306818179999999" green="0.001934701161" blue="0.00096294369730000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="addFriend:" destination="x5Z-hG-O8F" eventType="touchUpInside" id="QZV-SA-WAO"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="uSM-Kq-9LM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VGw-DP-AJO" secondAttribute="top" constant="10" id="2r5-Wh-YvN"/>
-                                <constraint firstItem="M2v-BX-dSC" firstAttribute="leading" secondItem="uSM-Kq-9LM" secondAttribute="trailing" constant="12" id="5Pf-cW-yaF"/>
-                                <constraint firstAttribute="bottom" secondItem="uSM-Kq-9LM" secondAttribute="bottom" constant="10" id="7qs-nw-AET"/>
-                                <constraint firstItem="uSM-Kq-9LM" firstAttribute="leading" secondItem="VGw-DP-AJO" secondAttribute="leading" constant="10" id="Cem-ux-9p7"/>
-                                <constraint firstItem="uSM-Kq-9LM" firstAttribute="leading" relation="lessThanOrEqual" secondItem="VGw-DP-AJO" secondAttribute="leading" constant="10" id="EBQ-Kt-qz8"/>
-                                <constraint firstItem="uSM-Kq-9LM" firstAttribute="top" secondItem="VGw-DP-AJO" secondAttribute="top" constant="10" id="KcP-1A-r8Y"/>
-                                <constraint firstAttribute="bottom" secondItem="M2v-BX-dSC" secondAttribute="bottom" constant="10" id="LJR-gs-RoH"/>
-                                <constraint firstItem="M2v-BX-dSC" firstAttribute="leading" secondItem="uSM-Kq-9LM" secondAttribute="trailing" constant="12" id="ODT-eD-2nT"/>
-                                <constraint firstItem="M2v-BX-dSC" firstAttribute="top" secondItem="VGw-DP-AJO" secondAttribute="top" constant="10" id="bZ1-UQ-XRa"/>
-                                <constraint firstAttribute="bottom" secondItem="uSM-Kq-9LM" secondAttribute="bottom" constant="10" id="d0I-BR-EO8"/>
-                                <constraint firstAttribute="trailing" secondItem="M2v-BX-dSC" secondAttribute="trailing" constant="10" id="enR-53-A7N"/>
-                                <constraint firstItem="M2v-BX-dSC" firstAttribute="leading" secondItem="uSM-Kq-9LM" secondAttribute="trailing" constant="10" id="h6X-1w-ERf"/>
-                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uSM-Kq-9LM" secondAttribute="bottom" constant="10" id="jcq-B5-8Sa"/>
-                                <constraint firstItem="M2v-BX-dSC" firstAttribute="leading" secondItem="uSM-Kq-9LM" secondAttribute="trailing" constant="10" id="lJt-Gn-a0X"/>
-                                <constraint firstItem="uSM-Kq-9LM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VGw-DP-AJO" secondAttribute="leading" constant="10" id="mbl-Nr-mGD"/>
-                                <constraint firstItem="uSM-Kq-9LM" firstAttribute="leading" secondItem="VGw-DP-AJO" secondAttribute="leading" constant="10" id="wKM-kX-5xX"/>
-                                <constraint firstItem="uSM-Kq-9LM" firstAttribute="top" secondItem="VGw-DP-AJO" secondAttribute="top" constant="10" id="wS5-L5-TCg"/>
-                            </constraints>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="2r5-Wh-YvN"/>
-                                    <exclude reference="Cem-ux-9p7"/>
-                                    <exclude reference="EBQ-Kt-qz8"/>
-                                    <exclude reference="d0I-BR-EO8"/>
-                                    <exclude reference="jcq-B5-8Sa"/>
-                                    <exclude reference="mbl-Nr-mGD"/>
-                                    <exclude reference="wS5-L5-TCg"/>
-                                    <exclude reference="5Pf-cW-yaF"/>
-                                    <exclude reference="ODT-eD-2nT"/>
-                                    <exclude reference="h6X-1w-ERf"/>
-                                </mask>
-                            </variation>
-                        </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" id="FC9-ao-S18" customClass="FriendTableViewCell" customModule="GithubFriends" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" rowHeight="100" id="FC9-ao-S18" customClass="FriendTableViewCell" customModule="GithubFriends" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FC9-ao-S18" id="9My-ar-6bA">
@@ -102,44 +30,44 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbD-rV-AhT">
-                                            <rect key="frame" x="365" y="7" width="46" height="30"/>
-                                            <state key="normal" title="Button">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuO-Tf-GGa">
-                                            <rect key="frame" x="82" y="4" width="338" height="35"/>
-                                            <color key="backgroundColor" red="0.0" green="0.71304481909999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="35" id="Wtz-5X-4WC"/>
-                                                <constraint firstAttribute="width" constant="245" id="awu-7V-5fg"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                            <state key="normal" title="Profile">
-                                                <color key="titleColor" red="0.0021306818179999999" green="0.001934701161" blue="0.00096294369730000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dE4-AI-WIh">
+                                            <rect key="frame" x="98" y="55" width="89" height="30"/>
+                                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                            <state key="normal" title="Repos">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="3EC-w9-psd" kind="show" id="1WJ-vl-PRn"/>
+                                                <segue destination="4pF-GC-lpF" kind="show" identifier="repoSegue" id="qhf-lN-om2"/>
                                             </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UHU-jH-6Pz">
+                                            <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQK-Nv-hhf">
+                                            <rect key="frame" x="104" y="10" width="250" height="37"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riW-Tu-qIT">
+                                            <rect key="frame" x="185" y="55" width="92" height="30"/>
+                                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                            <state key="normal" title="Gists">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                         </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="hh1-yq-NpW" firstAttribute="top" secondItem="9My-ar-6bA" secondAttribute="topMargin" constant="-4" id="0YS-gd-tFW"/>
-                                        <constraint firstItem="zuO-Tf-GGa" firstAttribute="leading" secondItem="hh1-yq-NpW" secondAttribute="trailing" constant="19" id="9TT-Hf-taJ"/>
-                                        <constraint firstItem="zuO-Tf-GGa" firstAttribute="leading" secondItem="9My-ar-6bA" secondAttribute="leadingMargin" constant="149" id="SwL-oA-t0G"/>
                                         <constraint firstItem="hh1-yq-NpW" firstAttribute="leading" secondItem="9My-ar-6bA" secondAttribute="leadingMargin" constant="14" id="aup-hq-6ea"/>
-                                        <constraint firstItem="zuO-Tf-GGa" firstAttribute="top" secondItem="9My-ar-6bA" secondAttribute="topMargin" constant="-4" id="vXb-Oz-jjb"/>
-                                        <constraint firstItem="zuO-Tf-GGa" firstAttribute="top" secondItem="9My-ar-6bA" secondAttribute="topMargin" constant="-4" id="y5q-QN-8NI"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="SwL-oA-t0G"/>
-                                            <exclude reference="y5q-QN-8NI"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="friendNameLabel" destination="fQK-Nv-hhf" id="5Vw-LL-wQe"/>
+                                    <outlet property="gistsButton" destination="riW-Tu-qIT" id="ePN-yQ-lGD"/>
+                                    <outlet property="profileImage" destination="UHU-jH-6Pz" id="tO8-vk-D5T"/>
+                                    <outlet property="reposButton" destination="dE4-AI-WIh" id="Qtx-6x-vpc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -149,50 +77,60 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="hst-A0-4oU">
-                        <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZO6-Z1-e4W">
-                            <rect key="frame" x="180" y="7" width="240" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                            <state key="normal" title="Repos">
-                                <color key="titleColor" red="0.0021306818179999999" green="0.001934701161" blue="0.00096294369730000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
+                    <navigationItem key="navigationItem" title="My Friends" id="hst-A0-4oU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QUR-5y-RVt">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="4pF-GC-lpF" kind="show" id="yLO-rk-e3f"/>
+                                <segue destination="CyB-jM-H0u" kind="presentation" identifier="addSegue" id="eDa-F7-ta2"/>
                             </connections>
-                        </button>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="UER-q2-Sel">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fWF-p4-0au">
-                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                                <state key="normal" title="Gists">
-                                    <color key="titleColor" red="0.0021306818179999999" green="0.001934701161" blue="0.00096294369730000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="friendNameField" destination="uSM-Kq-9LM" id="yvI-Pk-Mjl"/>
-                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8w-IS-kkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="91"/>
+            <point key="canvasLocation" x="327" y="-31"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Add Friend View Controller-->
+        <scene sceneID="jlJ-NS-qDZ">
+            <objects>
+                <viewController id="CyB-jM-H0u" customClass="AddFriendViewController" customModule="GithubFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IdS-ww-9He"/>
+                        <viewControllerLayoutGuide type="bottom" id="leY-6a-ALD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EXO-B5-g3Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1N-PI-Onc">
+                                <rect key="frame" x="24" y="39" width="81" height="57"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="CyB-jM-H0u" eventType="touchUpInside" id="KYe-Zu-u63"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0oz-dB-RNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="709"/>
+        </scene>
+        <!--Repos Table View Controller-->
         <scene sceneID="seM-So-uhr">
             <objects>
-                <tableViewController id="4pF-GC-lpF" sceneMemberID="viewController">
+                <tableViewController id="4pF-GC-lpF" customClass="ReposTableViewController" customModule="GithubFriends" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YAO-1F-UZ2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OhS-Xn-MNv">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="repoCell" id="OhS-Xn-MNv">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OhS-Xn-MNv" id="gaW-lb-N4R">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -207,43 +145,17 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTC-pK-1dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1018" y="-205"/>
-        </scene>
-        <!--Profile View Controller-->
-        <scene sceneID="da8-er-Qp1">
-            <objects>
-                <viewController id="3EC-w9-psd" customClass="ProfileViewController" customModule="GithubFriends" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IzT-qV-vuW"/>
-                        <viewControllerLayoutGuide type="bottom" id="qga-9N-X52"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eVz-St-T7h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBc-8b-gm4">
-                                <rect key="frame" x="0.0" y="11" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.1764705882" green="0.82745098039999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="ProfileWebView" destination="cBc-8b-gm4" id="f0X-SZ-Vse"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tCx-Vd-dQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1031" y="535"/>
+            <point key="canvasLocation" x="1024" y="-38"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bKa-jX-phc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8o5-JD-hIN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vJB-4e-NNG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vJB-4e-NNG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1764705882" green="0.82745098039999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

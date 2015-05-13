@@ -1,14 +1,39 @@
 //
-//  RepoTableViewController.swift
+//  ReposTableViewController.swift
 //  GithubFriends
 //
-//  Created by Whitney Lauren on 5/12/15.
+//  Created by Whitney Lauren on 5/13/15.
 //  Copyright (c) 2015 Whitney Lauren. All rights reserved.
 //
 
 import UIKit
 
-class RepoTableViewController: UITableViewController {
+class ReposTableViewController: UITableViewController {
+    
+    var friendInfo: [String:AnyObject?]! {
+        
+        didSet {
+            
+            navigationItem.title = friendInfo["name"] as? String
+            navigationItem.prompt = "REPOS"
+            
+            let reposEndpoint = friendInfo["repos_url"] as! String
+            
+            if let reposInfo = GithubRequest.getInfoWithEndpoint(reposEndpoint) as? [[String:AnyObject]] {
+                
+                repos = reposInfo
+                tableView.reloadData()
+                
+                
+            }
+                
+        }
+        
+                
+    }
+
+    var repos: [[String:AnyObject]] = []
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,27 +52,29 @@ class RepoTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+   // override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
-    }
+       // return 0
+   // }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return repos.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("repoCell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
+        cell.textLabel?.text = repos[indexPath.row]["name"] as? String
 
         return cell
+        
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
