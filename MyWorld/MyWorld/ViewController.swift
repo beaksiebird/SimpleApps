@@ -171,13 +171,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func showMoreInfo(sender: UIButton) {
         
-        var detailVC = UIViewController()
+        var detailVC = storyboard?.instantiateViewControllerWithIdentifier("venueVC") as! VenueViewController
         
         var venue = allVenues[sender.tag]
         
         detailVC.view.backgroundColor = UIColor.whiteColor()
         
-       detailVC.navigationItem.title = venue["name"] as? String
+        detailVC.navigationItem.title = venue["name"] as? String
         
         var box = UIView(frame: CGRectMake(20, 20, 100, 100))
         box.backgroundColor = UIColor.blueColor()

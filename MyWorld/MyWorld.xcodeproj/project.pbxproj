@@ -13,6 +13,7 @@
 		CDA7421F1B0E15D10011F53B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA7421E1B0E15D10011F53B /* Images.xcassets */; };
 		CDA742221B0E15D10011F53B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA742201B0E15D10011F53B /* LaunchScreen.xib */; };
 		CDA7422E1B0E15D10011F53B /* MyWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7422D1B0E15D10011F53B /* MyWorldTests.swift */; };
+		CDADA4E91B0F9B77002771CE /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDADA4E81B0F9B77002771CE /* VenueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CDA742271B0E15D10011F53B /* MyWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA7422C1B0E15D10011F53B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDA7422D1B0E15D10011F53B /* MyWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorldTests.swift; sourceTree = "<group>"; };
+		CDADA4E81B0F9B77002771CE /* VenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CDA742171B0E15D10011F53B /* AppDelegate.swift */,
 				CDA742191B0E15D10011F53B /* ViewController.swift */,
 				CDA7421B1B0E15D10011F53B /* Main.storyboard */,
+				CDADA4E81B0F9B77002771CE /* VenueViewController.swift */,
 				CDA742151B0E15D10011F53B /* Supporting Files */,
 			);
 			path = MyWorld;
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDADA4E91B0F9B77002771CE /* VenueViewController.swift in Sources */,
 				CDA7421A1B0E15D10011F53B /* ViewController.swift in Sources */,
 				CDA742181B0E15D10011F53B /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				CDA742331B0E15D10011F53B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDA742341B0E15D10011F53B /* Build configuration list for PBXNativeTarget "MyWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				CDA742361B0E15D10011F53B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
