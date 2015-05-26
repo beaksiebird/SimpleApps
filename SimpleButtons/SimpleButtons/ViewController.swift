@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    //sets up how first number and second number pressed results in an integer based on the operation button you have pressed.
    
     @IBOutlet weak var Screen: UILabel!
     
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     var operation = ""
     
     
-    
+    //Displays a specific number when the specific button is pressed.
     @IBAction func Number(sender: AnyObject) {
         
         var number = sender.currentTitle
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         }
         
     
-    
+    //Calls on a specific operation button when pressed. Sends result to title space.
     @IBAction func Operation(sender: AnyObject) {
         
         isTypingNumber = false
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         
     }
     
-    
+    //Totals the numbers from buttons pressed along with specific operation button.
     @IBAction func Equals(sender: AnyObject) {
         
         secondNumber = Screen.text!.toInt()!
@@ -78,6 +78,8 @@ class ViewController: UIViewController {
         Screen.text = "\(result)"
     }
     
+    
+    //This function clears the results screen and resets the calculator. 
     @IBAction func Clear(sender: AnyObject) {
        
         firstNumber = 0

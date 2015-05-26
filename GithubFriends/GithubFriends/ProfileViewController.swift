@@ -36,7 +36,7 @@ class ProfileViewController: UIViewController {
                         self.ProfileWebView.loadHTMLString(urlContent! as String, baseURL: nil)
                         
                     }
-                    
+                
                 }
                 
             }
