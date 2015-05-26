@@ -12,29 +12,14 @@ class VenueViewController: UIViewController {
     
     
     @IBOutlet weak var venueImage: UIImageView!
-    
-    
     @IBOutlet weak var categoryInfo: UILabel!
-    
-    
     @IBOutlet weak var addressInfo: UILabel!
-    
-    
-    
     @IBOutlet weak var usersInfo: UILabel!
-    
-    
-    
-    
-    
     @IBOutlet weak var checkinsInfo: UILabel!
-    
-    
-    
     @IBOutlet weak var tipsInfo: UILabel!
-    
-    
     @IBOutlet weak var herenowInfo: UILabel!
+    
+        
     
     
     

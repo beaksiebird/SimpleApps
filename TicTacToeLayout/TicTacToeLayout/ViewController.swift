@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     
     
-    
+    //Connects a way to restart the game if/when a winner is found
     
     @IBAction func reStart(sender: UIButton) {
         
@@ -32,22 +32,24 @@ class ViewController: UIViewController {
         
     }
     
+    //Yes, I am aware that these buttons are not connected :)
     
-    
-    
+    //Displays which players turn it is.
     
     @IBOutlet weak var playerIndicator: UILabel!
     
-    
+    //Displays button to restart game
     @IBOutlet weak var playAgain: UILabel!
     
-    
+    //Displays which player has won.
     @IBOutlet weak var displayWinner: UILabel!
+    
+    //Is a winner found? Yes or no?
     
     var winnerIsFound: Bool = false
     
     
-    
+    //The array that represents the game board.
     
     var spaces: [[Player?]] = [
         
@@ -65,10 +67,10 @@ class ViewController: UIViewController {
         playAgain.hidden = true
     }
     
-    
+    //Indicates which player is playing.
     var currentPlayer: Player = .One
     
-    
+    //Functions for button pressing.
     @IBAction func buttonPressed(sender: TButton) {
     
         
@@ -117,7 +119,7 @@ class ViewController: UIViewController {
             
         }
     }
-    
+    //These are all of the gameplay possibilities.
     var possibilities = [
         [0,0,0,1,0,2],
         [1,0,1,1,1,2],
@@ -129,7 +131,7 @@ class ViewController: UIViewController {
         [2,0,1,1,0,2],
         
     ]
-    
+    //This function uses the possibilities array to check for the winner.
     func checkForWinner() {
         
         
@@ -162,12 +164,12 @@ class ViewController: UIViewController {
         }
         
         
-         println("Player 2 got CGrekt")
+         println("Player 2 has failed")
       
         
     }
     
-    
+    //This function ends teh game when a winner is found. 
     func endGame() {
         
         winnerIsFound = true
