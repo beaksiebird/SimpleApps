@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 class VenueViewController: UIViewController {
     
@@ -26,6 +28,10 @@ class VenueViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Crashlytics.sharedInstance().crash()
+        
+        
 
         // Do any additional setup after loading the view.
     }

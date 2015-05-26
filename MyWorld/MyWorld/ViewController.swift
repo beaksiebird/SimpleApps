@@ -9,6 +9,10 @@
 import UIKit
 import MapKit
 
+
+
+
+
 class MyAnnotation : MKPointAnnotation {
     
     var venueIndex: Int!
@@ -179,17 +183,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         detailVC.view.backgroundColor = UIColor.whiteColor()
     }
 
+}
 
 
+//    
+//        var box = UIView(frame: CGRectMake(20, 20, 100, 100))
+//        box.backgroundColor = UIColor.blueColor()
+//        detailVC.view.addSubview(box)
+//        
+//        navigationController?.pushViewController(detailVC, animated: true)
+//        
 
-    
-        var box = UIView(frame: CGRectMake(20, 20, 100, 100))
-        box.backgroundColor = UIColor.blueColor()
-        detailVC.view.addSubview(box)
-        
-        navigationController?.pushViewController(detailVC, animated: true)
-        
-        
         
 
 
