@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F711E94489F53E21B1B4962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770EF5ED5E311945D9DC3D00 /* Foundation.framework */; };
+		5453EF70C9CAD13056337783 /* Pods-BeaksieButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C7DE1FABDFD28DA5666CC2 /* Pods-BeaksieButton-dummy.m */; };
+		5D930EE136A505C1647E380E /* Pods-BeaksieButton-ZFRippleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AACB48E3006F79E4C753E78 /* Pods-BeaksieButton-ZFRippleButton-dummy.m */; };
+		7E7E054B13E20841401D0661 /* Pods-BeaksieButton-ZFRippleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A82C803D6245FE25A963E4C /* Pods-BeaksieButton-ZFRippleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83BCBE2B200CF41B2FF68898 /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A00D396C93B9301CD43228 /* ZFRippleButton.swift */; };
+		CD91B1A18A627DE0C4531CED /* Pods-BeaksieButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E7243DFA357B33F4D117CB /* Pods-BeaksieButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4842471D8F3AEEC4155353D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770EF5ED5E311945D9DC3D00 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6313DD454A126B7933FF9C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D82B6AA63A17C81CA9D9EA3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285D2CB6DE4089B333CFEED0;
+			remoteInfo = "Pods-BeaksieButton-ZFRippleButton";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		074E5415BF25B72B9A80FC31 /* Pods-BeaksieButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BeaksieButton.modulemap"; sourceTree = "<group>"; };
+		1052CD990ED1D30D87F38917 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		153494B003DF46C54A2768D5 /* Pods-BeaksieButton-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BeaksieButton-acknowledgements.plist"; sourceTree = "<group>"; };
+		1932D3D0835F356AEDA5BF10 /* Pods-BeaksieButton-ZFRippleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BeaksieButton-ZFRippleButton-prefix.pch"; sourceTree = "<group>"; };
+		2901FF15CCD22B37429EF02C /* Pods-BeaksieButton-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BeaksieButton-resources.sh"; sourceTree = "<group>"; };
+		2A5F532F7E2F190021DE3596 /* ZFRippleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZFRippleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AACB48E3006F79E4C753E78 /* Pods-BeaksieButton-ZFRippleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BeaksieButton-ZFRippleButton-dummy.m"; sourceTree = "<group>"; };
+		405CC0903F47DD118B92BA84 /* Pods-BeaksieButton-ZFRippleButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeaksieButton-ZFRippleButton-Private.xcconfig"; sourceTree = "<group>"; };
+		57C7DE1FABDFD28DA5666CC2 /* Pods-BeaksieButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BeaksieButton-dummy.m"; sourceTree = "<group>"; };
+		6A59E0E55B54BC3D16C3E1D5 /* Pods-BeaksieButton-ZFRippleButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeaksieButton-ZFRippleButton.xcconfig"; sourceTree = "<group>"; };
+		6A82C803D6245FE25A963E4C /* Pods-BeaksieButton-ZFRippleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BeaksieButton-ZFRippleButton-umbrella.h"; sourceTree = "<group>"; };
+		6E87BF1724BB51A9B9D63C8A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75188DD9A628FDC02D0F44AA /* Pods-BeaksieButton-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BeaksieButton-frameworks.sh"; sourceTree = "<group>"; };
+		770EF5ED5E311945D9DC3D00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		837616B8B394EB88EE7B7F24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E7243DFA357B33F4D117CB /* Pods-BeaksieButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BeaksieButton-umbrella.h"; sourceTree = "<group>"; };
+		B7A0DD3BEB310986FF803DA9 /* Pods-BeaksieButton-ZFRippleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BeaksieButton-ZFRippleButton.modulemap"; sourceTree = "<group>"; };
+		C4622D536DD72FBA5BFBDFD0 /* Pods-BeaksieButton-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BeaksieButton-environment.h"; sourceTree = "<group>"; };
+		C5A00D396C93B9301CD43228 /* ZFRippleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZFRippleButton.swift; path = Classes/ZFRippleButton.swift; sourceTree = "<group>"; };
+		CF5154865B0E3D2C4E5C0472 /* Pods-BeaksieButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeaksieButton.release.xcconfig"; sourceTree = "<group>"; };
+		F7187F418725F709646FEC75 /* Pods_BeaksieButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeaksieButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC30974FEAC4DDB9EDEF979 /* Pods-BeaksieButton-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BeaksieButton-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE8243D8FC294FC68F67EE18 /* Pods-BeaksieButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BeaksieButton.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		736C9F34A786380C96416973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F711E94489F53E21B1B4962 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6967E2807C50C9B1208709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4842471D8F3AEEC4155353D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F27E3F97304BFA0C8D0A107 /* Pods-BeaksieButton */ = {
+			isa = PBXGroup;
+			children = (
+				837616B8B394EB88EE7B7F24 /* Info.plist */,
+				074E5415BF25B72B9A80FC31 /* Pods-BeaksieButton.modulemap */,
+				FAC30974FEAC4DDB9EDEF979 /* Pods-BeaksieButton-acknowledgements.markdown */,
+				153494B003DF46C54A2768D5 /* Pods-BeaksieButton-acknowledgements.plist */,
+				57C7DE1FABDFD28DA5666CC2 /* Pods-BeaksieButton-dummy.m */,
+				C4622D536DD72FBA5BFBDFD0 /* Pods-BeaksieButton-environment.h */,
+				75188DD9A628FDC02D0F44AA /* Pods-BeaksieButton-frameworks.sh */,
+				2901FF15CCD22B37429EF02C /* Pods-BeaksieButton-resources.sh */,
+				94E7243DFA357B33F4D117CB /* Pods-BeaksieButton-umbrella.h */,
+				FE8243D8FC294FC68F67EE18 /* Pods-BeaksieButton.debug.xcconfig */,
+				CF5154865B0E3D2C4E5C0472 /* Pods-BeaksieButton.release.xcconfig */,
+			);
+			name = "Pods-BeaksieButton";
+			path = "Target Support Files/Pods-BeaksieButton";
+			sourceTree = "<group>";
+		};
+		14CCB7018BC8B35995EB60A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF48CDB92CC8C50A076B439 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D4F5036D7222A5295142A18 = {
+			isa = PBXGroup;
+			children = (
+				6E87BF1724BB51A9B9D63C8A /* Podfile */,
+				14CCB7018BC8B35995EB60A8 /* Frameworks */,
+				8A93D2C42081EC492FFB4605 /* Pods */,
+				655B77C8D005E744B989E2E0 /* Products */,
+				A199E5B3B89A188F87E597AB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		2CC153E1224FB96191FE90CE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1052CD990ED1D30D87F38917 /* Info.plist */,
+				B7A0DD3BEB310986FF803DA9 /* Pods-BeaksieButton-ZFRippleButton.modulemap */,
+				6A59E0E55B54BC3D16C3E1D5 /* Pods-BeaksieButton-ZFRippleButton.xcconfig */,
+				405CC0903F47DD118B92BA84 /* Pods-BeaksieButton-ZFRippleButton-Private.xcconfig */,
+				2AACB48E3006F79E4C753E78 /* Pods-BeaksieButton-ZFRippleButton-dummy.m */,
+				1932D3D0835F356AEDA5BF10 /* Pods-BeaksieButton-ZFRippleButton-prefix.pch */,
+				6A82C803D6245FE25A963E4C /* Pods-BeaksieButton-ZFRippleButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-BeaksieButton-ZFRippleButton";
+			sourceTree = "<group>";
+		};
+		655B77C8D005E744B989E2E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7187F418725F709646FEC75 /* Pods_BeaksieButton.framework */,
+				2A5F532F7E2F190021DE3596 /* ZFRippleButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A93D2C42081EC492FFB4605 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEE538FD4D14927E95133AA3 /* ZFRippleButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BF48CDB92CC8C50A076B439 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				770EF5ED5E311945D9DC3D00 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A199E5B3B89A188F87E597AB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F27E3F97304BFA0C8D0A107 /* Pods-BeaksieButton */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AEE538FD4D14927E95133AA3 /* ZFRippleButton */ = {
+			isa = PBXGroup;
+			children = (
+				C5A00D396C93B9301CD43228 /* ZFRippleButton.swift */,
+				2CC153E1224FB96191FE90CE /* Support Files */,
+			);
+			path = ZFRippleButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		296DC65C70CEB32DA8F58092 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7E054B13E20841401D0661 /* Pods-BeaksieButton-ZFRippleButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6DC399CB7827BD913352626 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD91B1A18A627DE0C4531CED /* Pods-BeaksieButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		285D2CB6DE4089B333CFEED0 /* Pods-BeaksieButton-ZFRippleButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCC2C917F5CAA87B1BA2A35 /* Build configuration list for PBXNativeTarget "Pods-BeaksieButton-ZFRippleButton" */;
+			buildPhases = (
+				49ED9C8C2B0336A77D728B21 /* Sources */,
+				EA6967E2807C50C9B1208709 /* Frameworks */,
+				296DC65C70CEB32DA8F58092 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BeaksieButton-ZFRippleButton";
+			productName = "Pods-BeaksieButton-ZFRippleButton";
+			productReference = 2A5F532F7E2F190021DE3596 /* ZFRippleButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4276ADCCA6A544D2DB6B054C /* Pods-BeaksieButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E59E4B49DE51BCA7C117718 /* Build configuration list for PBXNativeTarget "Pods-BeaksieButton" */;
+			buildPhases = (
+				B401BD190F04FD2DF3A1EB61 /* Sources */,
+				736C9F34A786380C96416973 /* Frameworks */,
+				E6DC399CB7827BD913352626 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7194CC112778350577A8CF0A /* PBXTargetDependency */,
+			);
+			name = "Pods-BeaksieButton";
+			productName = "Pods-BeaksieButton";
+			productReference = F7187F418725F709646FEC75 /* Pods_BeaksieButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D82B6AA63A17C81CA9D9EA3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 58846C035238104ADC2DDDC0 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1D4F5036D7222A5295142A18;
+			productRefGroup = 655B77C8D005E744B989E2E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4276ADCCA6A544D2DB6B054C /* Pods-BeaksieButton */,
+				285D2CB6DE4089B333CFEED0 /* Pods-BeaksieButton-ZFRippleButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49ED9C8C2B0336A77D728B21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D930EE136A505C1647E380E /* Pods-BeaksieButton-ZFRippleButton-dummy.m in Sources */,
+				83BCBE2B200CF41B2FF68898 /* ZFRippleButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B401BD190F04FD2DF3A1EB61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5453EF70C9CAD13056337783 /* Pods-BeaksieButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7194CC112778350577A8CF0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BeaksieButton-ZFRippleButton";
+			target = 285D2CB6DE4089B333CFEED0 /* Pods-BeaksieButton-ZFRippleButton */;
+			targetProxy = C6313DD454A126B7933FF9C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6421FB303EEB142EBBA8CC52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		895DE5092E86DA49053277F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 405CC0903F47DD118B92BA84 /* Pods-BeaksieButton-ZFRippleButton-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BeaksieButton-ZFRippleButton/Pods-BeaksieButton-ZFRippleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BeaksieButton-ZFRippleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BeaksieButton-ZFRippleButton/Pods-BeaksieButton-ZFRippleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZFRippleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2FE9AEB94B040CF98A8A214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8243D8FC294FC68F67EE18 /* Pods-BeaksieButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BeaksieButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BeaksieButton/Pods-BeaksieButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BeaksieButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F115C3331E9732A4BCC3ACDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 405CC0903F47DD118B92BA84 /* Pods-BeaksieButton-ZFRippleButton-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BeaksieButton-ZFRippleButton/Pods-BeaksieButton-ZFRippleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BeaksieButton-ZFRippleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BeaksieButton-ZFRippleButton/Pods-BeaksieButton-ZFRippleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZFRippleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8C8DEACFF5076AA665B02BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F8D2D619EB1AB4CA945E4E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5154865B0E3D2C4E5C0472 /* Pods-BeaksieButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BeaksieButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BeaksieButton/Pods-BeaksieButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BeaksieButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58846C035238104ADC2DDDC0 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C8DEACFF5076AA665B02BD /* Debug */,
+				6421FB303EEB142EBBA8CC52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E59E4B49DE51BCA7C117718 /* Build configuration list for PBXNativeTarget "Pods-BeaksieButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FE9AEB94B040CF98A8A214 /* Debug */,
+				F8D2D619EB1AB4CA945E4E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCC2C917F5CAA87B1BA2A35 /* Build configuration list for PBXNativeTarget "Pods-BeaksieButton-ZFRippleButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				895DE5092E86DA49053277F3 /* Debug */,
+				F115C3331E9732A4BCC3ACDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D82B6AA63A17C81CA9D9EA3E /* Project object */;
+}

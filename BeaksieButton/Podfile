@@ -1,0 +1,6 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'BeaksieButton' do
+  pod 'ZFRippleButton', '~> 0.2'
+end
