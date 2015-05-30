@@ -78,10 +78,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                             annotation.coordinate = coordinate
                             
                             self.myMapView.addAnnotation(annotation)
-                            
-                            
-                            
-                        
                         
                         }
                         
@@ -130,12 +126,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                             
                             completion(venues: venuesInfo)
                             
-                            
-                            
-                            
                         }
-                    
-                        
                         
                     }
                     
