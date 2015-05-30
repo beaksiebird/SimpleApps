@@ -123,11 +123,15 @@ class AlbumCollectionViewController: UICollectionViewController, UICollectionVie
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender:AnyObject?) {
+        
         let cell = sender as! AlbumCollectionViewCell
         if let indexPath = collectionView?.indexPathForCell(cell)
         {
+           
             let albumInfo = albums[indexPath.item]
+            
             let detailVC = segue.destinationViewController as! AlbumDetailViewController
+            
             detailVC.albumInfo = albumInfo
             
         }
