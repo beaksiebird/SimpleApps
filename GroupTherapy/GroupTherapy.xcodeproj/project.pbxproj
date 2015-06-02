@@ -14,6 +14,7 @@
 		CD5772351B1DE2D200C4261D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5772331B1DE2D200C4261D /* LaunchScreen.xib */; };
 		CD5772411B1DE2D200C4261D /* GroupTherapyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5772401B1DE2D200C4261D /* GroupTherapyTests.m */; };
 		CD57724C1B1DE6DD00C4261D /* CharactersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD57724B1B1DE6DD00C4261D /* CharactersTableViewController.m */; };
+		CD57724F1B1E2AB500C4261D /* CharacterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD57724E1B1E2AB500C4261D /* CharacterTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		CD5772401B1DE2D200C4261D /* GroupTherapyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupTherapyTests.m; sourceTree = "<group>"; };
 		CD57724A1B1DE6DD00C4261D /* CharactersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactersTableViewController.h; sourceTree = "<group>"; };
 		CD57724B1B1DE6DD00C4261D /* CharactersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersTableViewController.m; sourceTree = "<group>"; };
+		CD57724D1B1E2AB500C4261D /* CharacterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterTableViewCell.h; sourceTree = "<group>"; };
+		CD57724E1B1E2AB500C4261D /* CharacterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				CD5772281B1DE2D200C4261D /* AppDelegate.h */,
+				CD57724D1B1E2AB500C4261D /* CharacterTableViewCell.h */,
+				CD57724E1B1E2AB500C4261D /* CharacterTableViewCell.m */,
 				CD5772291B1DE2D200C4261D /* AppDelegate.m */,
 				CD57724A1B1DE6DD00C4261D /* CharactersTableViewController.h */,
 				CD57724B1B1DE6DD00C4261D /* CharactersTableViewController.m */,
@@ -222,6 +227,7 @@
 				CD57724C1B1DE6DD00C4261D /* CharactersTableViewController.m in Sources */,
 				CD57722A1B1DE2D200C4261D /* AppDelegate.m in Sources */,
 				CD5772271B1DE2D200C4261D /* main.m in Sources */,
+				CD57724F1B1E2AB500C4261D /* CharacterTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
