@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *cellText;
 
+@property (weak, nonatomic) IBOutlet UIView *circle;
+
 @property (weak, nonatomic) IBOutlet UILabel *totalComics;
 
 

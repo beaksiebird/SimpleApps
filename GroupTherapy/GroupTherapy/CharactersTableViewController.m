@@ -12,6 +12,8 @@
 
 #import "CharacterTableViewCell.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 #define API_BASE @"http://gateway.marvel.com/v1/public/"
 
 #define PUBLIC_KEY @"122c80800b73d7bdbcbda6d2796b99cb"
@@ -183,10 +185,16 @@
         
     }
     
-    cell.totalComics.layer.cornerRadius = 30;
+
+   cell.circle.layer.cornerRadius = 30;
+    
+    //cell.totalComics.layer.masksToBounds = YES;
+    
+//    cell.totalComics.clipsToBounds = YES;
     
     return cell;
 }
+
 
 
 
