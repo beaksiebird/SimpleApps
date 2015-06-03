@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "FilterCollectionViewCell.h"
 
+
+
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *filterCollectionView;
@@ -32,8 +34,7 @@
     
     self.filterCollectionView.dataSource = self;
     self.filterCollectionView.delegate = self;
-    
-}
+   }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -48,12 +49,30 @@
     
     NSString * filterName = filters[indexPath.item];
     
-    cell.imageView.image = [self filterImage:self.original withName:filterName];
+    cell.imageView.image = [self filterImage: [self imageWithImage:self.original scaledToSize:(CGSizeMake(200, 200))]
+ withName:filterName];
+    
+   
     
     return cell;
+
+    
+            
+    
+    
+    
     
     
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+
+    
+}
+
+
 
 - (UIImage *) filterImage:(UIImage *)originalImage withName: (NSString *)filterName {
     
@@ -65,16 +84,29 @@
     
     [filter setValue:image forKey:kCIInputImageKey];
     
-    //[filter setValue:@0.8f forKey:kCIInputIntensityKey];
-    
     CIImage * result = [filter valueForKey:kCIOutputImageKey];
     
     CGRect extent = [result extent];
     
     CGImageRef cgImage = [context createCGImage:result fromRect:extent];
     
-    return [UIImage imageWithCGImage:cgImage];
     
+    return[UIImage imageWithCGImage:cgImage];
+}
+
+-(UIImage*)imageWithImage:(UIImage*)image
+
+             scaledToSize:(CGSize)newSize;
+{
+    UIGraphicsBeginImageContext( newSize );
+    
+    [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+    
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return newImage;
     
 }
 

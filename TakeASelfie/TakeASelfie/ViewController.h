@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic) UIImage * original; 
+@property (nonatomic) UIImage * original;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 

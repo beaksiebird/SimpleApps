@@ -27,68 +27,14 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="imageVC" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="LHY-Y2-CwO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OGg-kT-QtH">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
-                            </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A4L-6D-pwC">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="D3J-Tu-iPp"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4av-XW-yXp">
-                                    <size key="itemSize" width="80" height="80"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filterCell" id="skm-dX-lrc" customClass="FilterCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIP-Pe-ckj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <connections>
-                                            <outlet property="imageView" destination="zIP-Pe-ckj" id="NMW-Kz-YwA"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="OGg-kT-QtH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7kO-ss-mrn"/>
-                            <constraint firstAttribute="trailing" secondItem="A4L-6D-pwC" secondAttribute="trailing" id="QUV-tX-xzd"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OGg-kT-QtH" secondAttribute="bottom" constant="100" id="Rpi-ny-G2O"/>
-                            <constraint firstItem="OGg-kT-QtH" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="bgr-Sn-FVx"/>
-                            <constraint firstItem="A4L-6D-pwC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dew-Rm-vSG"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="A4L-6D-pwC" secondAttribute="bottom" id="g28-LX-Elq"/>
-                            <constraint firstAttribute="trailing" secondItem="OGg-kT-QtH" secondAttribute="trailing" id="iw1-Ef-fh9"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="filterCollectionView" destination="A4L-6D-pwC" id="Q9w-60-q74"/>
-                        <outlet property="imageView" destination="OGg-kT-QtH" id="7bz-9E-5bv"/>
-                    </connections>
+                    </imageView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="216"/>
+            <point key="canvasLocation" x="1168" y="241"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oWA-yd-ozg">
