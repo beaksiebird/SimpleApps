@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P2y-FD-0wK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Camera View Controller-->
@@ -27,10 +28,97 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController storyboardIdentifier="imageVC" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="LHY-Y2-CwO">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vba-hc-Fen"/>
+                        <viewControllerLayoutGuide type="bottom" id="P7n-6q-bBd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fof-WN-lev">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wDK-G1-Fdj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBu-hk-Guf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wdf-De-MAs">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Fsc-cH-97t"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5l9-B3-9Xx">
+                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filterCell" id="ggg-G0-ukH" customClass="FilterCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j12-Je-otc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="j12-Je-otc" id="biH-uL-EuI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgo-Iw-QjQ">
+                                <rect key="frame" x="16" y="28" width="60" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="&lt;-">
+                                    <color key="titleColor" red="0.99215686270000003" green="0.12549019610000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5NR-fk-UCg"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BCs-sF-uPC">
+                                <rect key="frame" x="14" y="453" width="572" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ofb-tP-ehc"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="0.99215686270000003" green="0.12549019610000001" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="filterIntensityChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="j3D-hq-hi3"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wDK-G1-Fdj" firstAttribute="leading" secondItem="Fof-WN-lev" secondAttribute="leading" id="2wl-XH-mWq"/>
+                            <constraint firstAttribute="trailing" secondItem="xBu-hk-Guf" secondAttribute="trailing" id="9jh-dy-pAO"/>
+                            <constraint firstItem="wDK-G1-Fdj" firstAttribute="top" secondItem="Fof-WN-lev" secondAttribute="top" id="Avh-bZ-wGI"/>
+                            <constraint firstItem="wdf-De-MAs" firstAttribute="top" secondItem="wDK-G1-Fdj" secondAttribute="bottom" id="BNo-Ok-Btt"/>
+                            <constraint firstItem="xBu-hk-Guf" firstAttribute="top" secondItem="Fof-WN-lev" secondAttribute="top" id="C3l-CK-Eq9"/>
+                            <constraint firstAttribute="trailing" secondItem="wdf-De-MAs" secondAttribute="trailing" id="Cr8-d0-SvJ"/>
+                            <constraint firstItem="BCs-sF-uPC" firstAttribute="leading" secondItem="Fof-WN-lev" secondAttribute="leadingMargin" id="MLU-rb-yFM"/>
+                            <constraint firstItem="xBu-hk-Guf" firstAttribute="leading" secondItem="Fof-WN-lev" secondAttribute="leading" id="b2C-HL-cHg"/>
+                            <constraint firstItem="wdf-De-MAs" firstAttribute="top" secondItem="BCs-sF-uPC" secondAttribute="bottom" constant="17" id="dXe-Ox-HcI"/>
+                            <constraint firstAttribute="trailing" secondItem="wDK-G1-Fdj" secondAttribute="trailing" id="fgC-7r-d0I"/>
+                            <constraint firstItem="wdf-De-MAs" firstAttribute="leading" secondItem="Fof-WN-lev" secondAttribute="leading" id="gqP-e3-ELy"/>
+                            <constraint firstItem="P7n-6q-bBd" firstAttribute="top" secondItem="xBu-hk-Guf" secondAttribute="bottom" constant="100" id="uaX-aS-gnu"/>
+                            <constraint firstItem="P7n-6q-bBd" firstAttribute="top" secondItem="wdf-De-MAs" secondAttribute="bottom" id="vqe-XG-tuY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BCs-sF-uPC" secondAttribute="trailing" id="xWH-VN-Pyc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filterCollectionView" destination="wdf-De-MAs" id="UGz-vU-qfo"/>
+                        <outlet property="imageView" destination="xBu-hk-Guf" id="gJQ-A5-wYn"/>
+                        <outlet property="unfilteredImageView" destination="wDK-G1-Fdj" id="g2e-uM-pyT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
