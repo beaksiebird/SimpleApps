@@ -72,6 +72,22 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (IBAction)pressedDown:(UIButton *)sender {
+    
+    //conditional variable
+    CGFloat direction = ([sender.titleLabel.text isEqualToString:@"A"]) ? -5: 5;
+    
+    [scene changePixelDirection:direction];
+}
+
+- (IBAction)releasedButton:(id)sender {
+    
+    [scene changePixelDirection:0];
+    
+    
+}
+
+
 
 - (IBAction)moveButtonPressed:(UIButton *)sender {
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD7B644F1B271F65003FBABB /* smb_coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD7B644E1B271F65003FBABB /* smb_coin.wav */; };
 		CD8380D51B25D1FA0004D7D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8380D41B25D1FA0004D7D6 /* main.m */; };
 		CD8380D81B25D1FA0004D7D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8380D71B25D1FA0004D7D6 /* AppDelegate.m */; };
 		CD8380DB1B25D1FA0004D7D6 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8380DA1B25D1FA0004D7D6 /* GameScene.m */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD7B644E1B271F65003FBABB /* smb_coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smb_coin.wav; sourceTree = "<group>"; };
 		CD8380CF1B25D1FA0004D7D6 /* PixelAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8380D31B25D1FA0004D7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD8380D41B25D1FA0004D7D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				CD8380E11B25D1FA0004D7D6 /* Main.storyboard */,
+				CD7B644E1B271F65003FBABB /* smb_coin.wav */,
 				CD8380D91B25D1FA0004D7D6 /* GameScene.h */,
 				CD8380DA1B25D1FA0004D7D6 /* GameScene.m */,
 				CD8380FD1B25F06C0004D7D6 /* Attack.sks */,
@@ -217,6 +220,7 @@
 				CD8381001B25F06C0004D7D6 /* spark.png in Resources */,
 				CD8380FF1B25F06C0004D7D6 /* Attack.sks in Resources */,
 				CD8380E51B25D1FA0004D7D6 /* Images.xcassets in Resources */,
+				CD7B644F1B271F65003FBABB /* smb_coin.wav in Resources */,
 				CD8380DD1B25D1FA0004D7D6 /* GameScene.sks in Resources */,
 				CD8380E31B25D1FA0004D7D6 /* Main.storyboard in Resources */,
 			);
@@ -434,6 +438,7 @@
 				CD8380F91B25D1FA0004D7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD8380FA1B25D1FA0004D7D6 /* Build configuration list for PBXNativeTarget "PixelAdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +447,7 @@
 				CD8380FC1B25D1FA0004D7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,13 +11,16 @@
 @implementation GameScene
 {
     SKShapeNode * pixel;
+    CGFloat characterDirection;
     
 }
 
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
-      self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:view.frame];
-  
+    self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:view.frame];
+    
+   //UIImage * tielImage
+    
   //  SKFieldNode * field = [SKFieldNode radialGravityField];
     
   //  field.position = view.center;
@@ -42,7 +45,13 @@
     [self addChild:pixel];
     
 }
-
+// changes pixel direction to move left and right
+-(void)changePixelDirection:(CGFloat)direction {
+    
+        characterDirection = direction; 
+    
+}
+// allows pixel to jump
 -(void)movePixelInDirection:(CGVector)direction {
     
    // [pixel.physicsBody applyImpulse:direction];
@@ -78,8 +87,11 @@
 
 -(void)specialAttack{
     
-    SKEmitterNode * fireBall = [SKEmitterNode nodeWithFileNamed:@"Attack"];
+    SKAction * soundEffect = [SKAction playSoundFileNamed:@"smb_coin.wav" waitForCompletion:NO];
     
+    [self runAction:soundEffect];
+    
+    SKEmitterNode * fireBall = [SKEmitterNode nodeWithFileNamed:@"Attack"];
     
     fireBall.position = CGPointMake(pixel.position.x + 10, pixel.position.y);
     
@@ -98,7 +110,14 @@
 
 
 -(void)update:(CFTimeInterval)currentTime {
+    
+    pixel.position = CGPointMake(pixel.position.x + characterDirection, pixel.position.y);
+    
     /* Called before each frame is rendered */
+    
+    
+    
+    
 }
 
 @end
