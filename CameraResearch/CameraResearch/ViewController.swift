@@ -51,7 +51,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject])
     {
 
-        imageView.image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imageView.image = (info[UIImagePickerControllerOriginalImage] as! UIImage)
         
         dismissViewControllerAnimated(true, completion: nil)
         

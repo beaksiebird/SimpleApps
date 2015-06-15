@@ -176,6 +176,7 @@
 		CDA7420A1B0E15D10011F53B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Whitney Lauren";
 				TargetAttributes = {

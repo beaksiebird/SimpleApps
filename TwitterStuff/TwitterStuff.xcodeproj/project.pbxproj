@@ -193,6 +193,7 @@
 		CDD068771B14B2AB0085206A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Whitney Lauren";
 				TargetAttributes = {
@@ -471,6 +472,7 @@
 				CDD068A01B14B2AB0085206A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDD068A11B14B2AB0085206A /* Build configuration list for PBXNativeTarget "TwitterStuffTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +481,7 @@
 				CDD068A31B14B2AB0085206A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

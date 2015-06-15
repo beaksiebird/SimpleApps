@@ -483,6 +483,7 @@
 				CD750FF61B17505F00106E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD750FF71B17505F00106E21 /* Build configuration list for PBXNativeTarget "SlytherFryndsTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				CD750FF91B17505F00106E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
