@@ -20,21 +20,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [Parse setApplicationId:[@"f69qD4pooBOMrOwKIDHqHHtaJUS7xvHAnhvm4Cwr"];
-     [clientKey:[@"9lACm3EUWeeBqXy8Ia5bATPsf4ZIVmWIyf8xDxzw"];
+    [Parse setApplicationId:@"f69qD4pooBOMrOwKIDHqHHtaJUS7xvHAnhvm4Cwr"
+    clientKey:@"9lACm3EUWeeBqXy8Ia5bATPsf4ZIVmWIyf8xDxzw"];
     
-    PFUser * user = [PFUser user];
-   // user.username = @"beaksie";
-    //user.password = @"password";
-    //[user signUpInBackground];
-    //[PFUser logInWithUsername:@"beaksie" password:@"password"];
-    [PFUser logInWithUsernameInBackground:@"beaksie" password:@"password"];
+//    PFUser * user = [PFUser user];
+//    user.username = @"beaksie";
+//    user.password = @"password";
+//    [user signUp];
+    [PFUser logInWithUsername:@"beaksie" password:@"password"];
+//    [PFUser logInWithUsernameInBackground:@"beaksie" password:@"password"];
     
     UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
                                                     UIUserNotificationTypeBadge |
                                                     UIUserNotificationTypeSound);
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
-                                                                             categories:nil];
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes categories:nil];
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
     
