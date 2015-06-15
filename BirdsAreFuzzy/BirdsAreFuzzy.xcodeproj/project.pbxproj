@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5B61261B2F584E000877B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5B61251B2F584E000877B1 /* AppDelegate.swift */; };
+		CD5B61281B2F584E000877B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5B61271B2F584E000877B1 /* ViewController.swift */; };
+		CD5B612B1B2F584E000877B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5B61291B2F584E000877B1 /* Main.storyboard */; };
+		CD5B612D1B2F584E000877B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5B612C1B2F584E000877B1 /* Images.xcassets */; };
+		CD5B61301B2F584E000877B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5B612E1B2F584E000877B1 /* LaunchScreen.xib */; };
+		CD5B613C1B2F584E000877B1 /* BirdsAreFuzzyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5B613B1B2F584E000877B1 /* BirdsAreFuzzyTests.swift */; };
+		CD5B61471B2F589F000877B1 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B61461B2F589F000877B1 /* Firebase.framework */; };
+		CD5B61491B2F58FA000877B1 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B61481B2F58FA000877B1 /* libicucore.dylib */; };
+		CD5B614B1B2F5908000877B1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B614A1B2F5908000877B1 /* libc++.dylib */; };
+		CD5B614D1B2F5916000877B1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B614C1B2F5916000877B1 /* CFNetwork.framework */; };
+		CD5B614F1B2F5923000877B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B614E1B2F5923000877B1 /* Security.framework */; };
+		CD5B61511B2F592F000877B1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5B61501B2F592F000877B1 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD5B61361B2F584E000877B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD5B61181B2F584E000877B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5B611F1B2F584E000877B1;
+			remoteInfo = BirdsAreFuzzy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD5B61201B2F584E000877B1 /* BirdsAreFuzzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdsAreFuzzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5B61241B2F584E000877B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5B61251B2F584E000877B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD5B61271B2F584E000877B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD5B612A1B2F584E000877B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD5B612C1B2F584E000877B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD5B612F1B2F584E000877B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CD5B61351B2F584E000877B1 /* BirdsAreFuzzyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdsAreFuzzyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5B613A1B2F584E000877B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5B613B1B2F584E000877B1 /* BirdsAreFuzzyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsAreFuzzyTests.swift; sourceTree = "<group>"; };
+		CD5B61461B2F589F000877B1 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		CD5B61481B2F58FA000877B1 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		CD5B614A1B2F5908000877B1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		CD5B614C1B2F5916000877B1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CD5B614E1B2F5923000877B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CD5B61501B2F592F000877B1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD5B61521B2F59FB000877B1 /* BirdsAreFuzzy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BirdsAreFuzzy-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD5B611D1B2F584E000877B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5B61511B2F592F000877B1 /* SystemConfiguration.framework in Frameworks */,
+				CD5B614F1B2F5923000877B1 /* Security.framework in Frameworks */,
+				CD5B614D1B2F5916000877B1 /* CFNetwork.framework in Frameworks */,
+				CD5B614B1B2F5908000877B1 /* libc++.dylib in Frameworks */,
+				CD5B61491B2F58FA000877B1 /* libicucore.dylib in Frameworks */,
+				CD5B61471B2F589F000877B1 /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5B61321B2F584E000877B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD5B61171B2F584E000877B1 = {
+			isa = PBXGroup;
+			children = (
+				CD5B61221B2F584E000877B1 /* BirdsAreFuzzy */,
+				CD5B61381B2F584E000877B1 /* BirdsAreFuzzyTests */,
+				CD5B61211B2F584E000877B1 /* Products */,
+				CD5B61451B2F5880000877B1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD5B61211B2F584E000877B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B61201B2F584E000877B1 /* BirdsAreFuzzy.app */,
+				CD5B61351B2F584E000877B1 /* BirdsAreFuzzyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5B61221B2F584E000877B1 /* BirdsAreFuzzy */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B61251B2F584E000877B1 /* AppDelegate.swift */,
+				CD5B61271B2F584E000877B1 /* ViewController.swift */,
+				CD5B61291B2F584E000877B1 /* Main.storyboard */,
+				CD5B61231B2F584E000877B1 /* Supporting Files */,
+				CD5B61521B2F59FB000877B1 /* BirdsAreFuzzy-Bridging-Header.h */,
+			);
+			path = BirdsAreFuzzy;
+			sourceTree = "<group>";
+		};
+		CD5B61231B2F584E000877B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B612E1B2F584E000877B1 /* LaunchScreen.xib */,
+				CD5B612C1B2F584E000877B1 /* Images.xcassets */,
+				CD5B61241B2F584E000877B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD5B61381B2F584E000877B1 /* BirdsAreFuzzyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B613B1B2F584E000877B1 /* BirdsAreFuzzyTests.swift */,
+				CD5B61391B2F584E000877B1 /* Supporting Files */,
+			);
+			path = BirdsAreFuzzyTests;
+			sourceTree = "<group>";
+		};
+		CD5B61391B2F584E000877B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B613A1B2F584E000877B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD5B61451B2F5880000877B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD5B61501B2F592F000877B1 /* SystemConfiguration.framework */,
+				CD5B614E1B2F5923000877B1 /* Security.framework */,
+				CD5B614C1B2F5916000877B1 /* CFNetwork.framework */,
+				CD5B614A1B2F5908000877B1 /* libc++.dylib */,
+				CD5B61481B2F58FA000877B1 /* libicucore.dylib */,
+				CD5B61461B2F589F000877B1 /* Firebase.framework */,
+			);
+			name = Frameworks;
+			path = BirdsAreFuzzy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD5B611F1B2F584E000877B1 /* BirdsAreFuzzy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5B613F1B2F584E000877B1 /* Build configuration list for PBXNativeTarget "BirdsAreFuzzy" */;
+			buildPhases = (
+				CD5B611C1B2F584E000877B1 /* Sources */,
+				CD5B611D1B2F584E000877B1 /* Frameworks */,
+				CD5B611E1B2F584E000877B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdsAreFuzzy;
+			productName = BirdsAreFuzzy;
+			productReference = CD5B61201B2F584E000877B1 /* BirdsAreFuzzy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD5B61341B2F584E000877B1 /* BirdsAreFuzzyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5B61421B2F584E000877B1 /* Build configuration list for PBXNativeTarget "BirdsAreFuzzyTests" */;
+			buildPhases = (
+				CD5B61311B2F584E000877B1 /* Sources */,
+				CD5B61321B2F584E000877B1 /* Frameworks */,
+				CD5B61331B2F584E000877B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5B61371B2F584E000877B1 /* PBXTargetDependency */,
+			);
+			name = BirdsAreFuzzyTests;
+			productName = BirdsAreFuzzyTests;
+			productReference = CD5B61351B2F584E000877B1 /* BirdsAreFuzzyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD5B61181B2F584E000877B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Whitney Lauren";
+				TargetAttributes = {
+					CD5B611F1B2F584E000877B1 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					CD5B61341B2F584E000877B1 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = CD5B611F1B2F584E000877B1;
+					};
+				};
+			};
+			buildConfigurationList = CD5B611B1B2F584E000877B1 /* Build configuration list for PBXProject "BirdsAreFuzzy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD5B61171B2F584E000877B1;
+			productRefGroup = CD5B61211B2F584E000877B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD5B611F1B2F584E000877B1 /* BirdsAreFuzzy */,
+				CD5B61341B2F584E000877B1 /* BirdsAreFuzzyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD5B611E1B2F584E000877B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5B612B1B2F584E000877B1 /* Main.storyboard in Resources */,
+				CD5B61301B2F584E000877B1 /* LaunchScreen.xib in Resources */,
+				CD5B612D1B2F584E000877B1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5B61331B2F584E000877B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD5B611C1B2F584E000877B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5B61281B2F584E000877B1 /* ViewController.swift in Sources */,
+				CD5B61261B2F584E000877B1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5B61311B2F584E000877B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5B613C1B2F584E000877B1 /* BirdsAreFuzzyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD5B61371B2F584E000877B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5B611F1B2F584E000877B1 /* BirdsAreFuzzy */;
+			targetProxy = CD5B61361B2F584E000877B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD5B61291B2F584E000877B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5B612A1B2F584E000877B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD5B612E1B2F584E000877B1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5B612F1B2F584E000877B1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD5B613D1B2F584E000877B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD5B613E1B2F584E000877B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD5B61401B2F584E000877B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BirdsAreFuzzy",
+				);
+				INFOPLIST_FILE = BirdsAreFuzzy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BirdsAreFuzzy/BirdsAreFuzzy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD5B61411B2F584E000877B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BirdsAreFuzzy",
+				);
+				INFOPLIST_FILE = BirdsAreFuzzy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BirdsAreFuzzy/BirdsAreFuzzy-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		CD5B61431B2F584E000877B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BirdsAreFuzzyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdsAreFuzzy.app/BirdsAreFuzzy";
+			};
+			name = Debug;
+		};
+		CD5B61441B2F584E000877B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BirdsAreFuzzyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdsAreFuzzy.app/BirdsAreFuzzy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD5B611B1B2F584E000877B1 /* Build configuration list for PBXProject "BirdsAreFuzzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5B613D1B2F584E000877B1 /* Debug */,
+				CD5B613E1B2F584E000877B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5B613F1B2F584E000877B1 /* Build configuration list for PBXNativeTarget "BirdsAreFuzzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5B61401B2F584E000877B1 /* Debug */,
+				CD5B61411B2F584E000877B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD5B61421B2F584E000877B1 /* Build configuration list for PBXNativeTarget "BirdsAreFuzzyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5B61431B2F584E000877B1 /* Debug */,
+				CD5B61441B2F584E000877B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD5B61181B2F584E000877B1 /* Project object */;
+}
