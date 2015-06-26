@@ -39,9 +39,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wDK-G1-Fdj">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBu-hk-Guf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wdf-De-MAs">
                                 <rect key="frame" x="0.0" y="500" width="600" height="100"/>
                                 <constraints>
@@ -95,6 +92,9 @@
                                     <action selector="filterIntensityChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="j3D-hq-hi3"/>
                                 </connections>
                             </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBu-hk-Guf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

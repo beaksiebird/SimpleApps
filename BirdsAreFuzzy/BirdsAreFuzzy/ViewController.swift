@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var chatMessages: [String:[String:AnyObject]] = [:]
     
+    
+    
     @IBOutlet weak var chatField: UITextField!
     
     @IBOutlet weak var nameButton: UIButton!
@@ -24,6 +26,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     @IBOutlet weak var messagesTableView: UITableView!
+    
+    
     
     
     var myFireBase = Firebase(url:"https://secret-room.firebaseio.com")
@@ -39,7 +43,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             snapshot in
             
             if let data = snapshot.value as? [String:AnyObject] {
-                
                 
                 self.chatMessages = data["messages"] as! [String:[String:AnyObject]]
                 
@@ -60,6 +63,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let cell = tableView.dequeueReusableCellWithIdentifier("messageCell") as! UITableViewCell
         
+    
     let message = chatMessages.values.array[indexPath.row]
         
     cell.textLabel?.text = message["name"] as? String
@@ -69,6 +73,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     return cell
     
 }
+
+    
 
 
 @IBAction func saveName(sender: AnyObject)
