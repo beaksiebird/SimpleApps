@@ -185,7 +185,30 @@ class GameViewController: UIViewController {
             endGame()
         }
     }
-
+    
+    func gameOver() {
+        
+        animateOldCirclesOut()
+        
+        let gameOverLabel = UILabel(frame: view.frame)
+        
+        gameOverLabel.textAlignment = .Center
+        gameOverLabel.text = "GAME OVER"
+        gameOverLabel.font = UIFont(name: "MarketFeltThin", size: 100)
+        
+        gameOverLabel.alpha = 0
+        
+        view.addSubview(gameOverLabel)
+        
+        UIView.animateWithDuration(1.0, animations: { () -> Void in
+            
+        gameOverLabel.alpha = 0
+        
+            }) { (finished) -> Void in
+                
+                self.endGame()
+        }
+    }
 
     func endGame() {
         
