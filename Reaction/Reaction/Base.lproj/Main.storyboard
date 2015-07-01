@@ -78,6 +78,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KcY-mU-ryg"/>
                     <connections>
+                        <outlet property="goButton" destination="btX-Og-RZS" id="7Be-87-one"/>
                         <outlet property="topScore" destination="ttD-6s-vct" id="c4K-o2-WVE"/>
                     </connections>
                 </viewController>

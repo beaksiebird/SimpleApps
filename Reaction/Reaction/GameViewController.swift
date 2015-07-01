@@ -34,7 +34,7 @@ class GameViewController: UIViewController {
         view.addSubview(timerBar)
         
         scoreLabel.textColor = UIColor.whiteColor()
-        scoreLabel.font = UIFont(name: "MarketFeltThin", size: 80)
+        scoreLabel.font = UIFont(name: "MarketFelt", size: 80)
         scoreLabel.text = "0"
         scoreLabel.frame.origin.y = view.frame.height - 120
         scoreLabel.frame.size.width = view.frame.width
@@ -130,6 +130,8 @@ class GameViewController: UIViewController {
         
         for circle in currentCircles {
             
+            circle.choice = 4
+            
             let distX = circle.center.x - view.center.x
             let distY = circle.center.y - view.center.y
             
@@ -182,7 +184,7 @@ class GameViewController: UIViewController {
         
         } else {
     
-            endGame()
+            gameOver()
         }
     }
     
@@ -191,22 +193,31 @@ class GameViewController: UIViewController {
         animateOldCirclesOut()
         
         let gameOverLabel = UILabel(frame: view.frame)
-        
         gameOverLabel.textAlignment = .Center
+        gameOverLabel.textColor = UIColor.whiteColor()
         gameOverLabel.text = "GAME OVER"
-        gameOverLabel.font = UIFont(name: "MarketFeltThin", size: 100)
+        gameOverLabel.font = UIFont(name: "MarketFelt", size: 60)
         
         gameOverLabel.alpha = 0
         
         view.addSubview(gameOverLabel)
         
-        UIView.animateWithDuration(1.0, animations: { () -> Void in
+       UIView.animateWithDuration(0.4, animations: { () -> Void in
             
-        gameOverLabel.alpha = 0
-        
-            }) { (finished) -> Void in
+            gameOverLabel.alpha = 1
+            self.scoreLabel.alpha = 0
+
+        }) { (finished) -> Void in
                 
+            UIView.animateWithDuration(1.6, animations: { () -> Void in
+                
+                gameOverLabel.alpha = 0
+                
+            }) { (finished) -> Void in
+                        
                 self.endGame()
+                
+            }
         }
     }
 
