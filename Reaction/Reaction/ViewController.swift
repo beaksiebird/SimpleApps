@@ -9,7 +9,10 @@
 import UIKit
 import GameKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GKGameCenterControllerDelegate {
+    
+    
+    @IBOutlet weak var leaderboardButton: UIButton!
     
     @IBOutlet weak var goButton: CircleButton!
     
@@ -105,5 +108,38 @@ class ViewController: UIViewController {
         
     }
 
+    
+    @IBAction func showLeaderboard(sender: AnyObject) {
+        
+        let gameVC = GKGameCenterViewController()
+        gameVC.leaderboardIdentifier = "circles_touched"
+        gameVC.gameCenterDelegate = self
+        presentViewController(gameVC, animated: true, completion: nil)
+        
+    }
+    
+    func gameCenterViewControllerDidFinish(gameCenterViewController: GKGameCenterViewController!) {
+        
+        gameCenterViewController.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

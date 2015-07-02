@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eZX-Ku-ODM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eZX-Ku-ODM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -45,12 +45,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttD-6s-vct">
-                                <rect key="frame" x="269" y="502.5" width="76" height="81.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
-                                <color key="textColor" red="0.99830263850000001" green="0.24921078590000001" blue="0.54536423680000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btX-Og-RZS" customClass="CircleButton" customModule="Reaction" customModuleProvider="target">
                                 <rect key="frame" x="207" y="185" width="200" height="200"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="69"/>
@@ -62,8 +56,33 @@
                                     <action selector="go:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pjk-TR-iSD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDo-y1-VaD">
+                                <rect key="frame" x="511" y="514" width="58" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="39R-yN-zDS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="gamecenter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLeaderboard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lsE-BH-AKF"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="gamecenter" translatesAutoresizingMaskIntoConstraints="NO" id="mux-mU-QFz">
+                                <rect key="frame" x="252" y="15" width="85" height="64"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttD-6s-vct">
+                                <rect key="frame" x="269" y="502" width="76" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <color key="textColor" red="0.99830263850000001" green="0.24921078590000001" blue="0.54536423680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="fDo-y1-VaD" secondAttribute="bottom" constant="27" id="aEP-vF-kj9"/>
+                            <constraint firstAttribute="trailing" secondItem="fDo-y1-VaD" secondAttribute="trailing" constant="31" id="ndW-85-Jrq"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
                                 <color key="value" red="0.9983026385307312" green="0.57976997139478537" blue="0.60049324111317526" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,6 +98,7 @@
                     <navigationItem key="navigationItem" id="KcY-mU-ryg"/>
                     <connections>
                         <outlet property="goButton" destination="btX-Og-RZS" id="7Be-87-one"/>
+                        <outlet property="leaderboardButton" destination="fDo-y1-VaD" id="NeG-Nd-v7G"/>
                         <outlet property="topScore" destination="ttD-6s-vct" id="c4K-o2-WVE"/>
                     </connections>
                 </viewController>
@@ -104,5 +124,25 @@
             </objects>
             <point key="canvasLocation" x="-222" y="241"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="G55-c7-A53">
+            <objects>
+                <viewController id="HxE-IM-xQd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="av7-74-A7H"/>
+                        <viewControllerLayoutGuide type="bottom" id="45N-eV-vNx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pza-IY-Saw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbN-8R-vC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
+    <resources>
+        <image name="gamecenter" width="58" height="59"/>
+    </resources>
 </document>
