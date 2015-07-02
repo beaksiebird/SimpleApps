@@ -13,6 +13,9 @@
 		CD8266571B45748A0085302A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8266561B45748A0085302A /* Images.xcassets */; };
 		CD82665A1B45748A0085302A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD8266581B45748A0085302A /* LaunchScreen.xib */; };
 		CD8266661B45748A0085302A /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8266651B45748A0085302A /* MoneyTests.swift */; };
+		CD8266731B457BCA0085302A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8266701B457BCA0085302A /* Fabric.framework */; };
+		CD8266741B457BCA0085302A /* MoPub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8266711B457BCA0085302A /* MoPub.framework */; };
+		CD8266751B457BCA0085302A /* MoPub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CD8266721B457BCA0085302A /* MoPub.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		CD82665F1B45748A0085302A /* MoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8266641B45748A0085302A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD8266651B45748A0085302A /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		CD8266701B457BCA0085302A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		CD8266711B457BCA0085302A /* MoPub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MoPub.framework; sourceTree = "<group>"; };
+		CD8266721B457BCA0085302A /* MoPub.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MoPub.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8266741B457BCA0085302A /* MoPub.framework in Frameworks */,
+				CD8266731B457BCA0085302A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,9 @@
 		CD82664C1B45748A0085302A /* Money */ = {
 			isa = PBXGroup;
 			children = (
+				CD8266701B457BCA0085302A /* Fabric.framework */,
+				CD8266711B457BCA0085302A /* MoPub.framework */,
+				CD8266721B457BCA0085302A /* MoPub.bundle */,
 				CD82664F1B45748A0085302A /* AppDelegate.swift */,
 				CD8266511B45748A0085302A /* ViewController.swift */,
 				CD8266531B45748A0085302A /* Main.storyboard */,
@@ -122,6 +133,7 @@
 				CD8266461B45748A0085302A /* Sources */,
 				CD8266471B45748A0085302A /* Frameworks */,
 				CD8266481B45748A0085302A /* Resources */,
+				CD82666F1B457BA90085302A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -195,6 +207,7 @@
 				CD8266551B45748A0085302A /* Main.storyboard in Resources */,
 				CD82665A1B45748A0085302A /* LaunchScreen.xib in Resources */,
 				CD8266571B45748A0085302A /* Images.xcassets in Resources */,
+				CD8266751B457BCA0085302A /* MoPub.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +219,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD82666F1B457BA90085302A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e2a1a0d6aec19d4c2ef905fba793b52ee72310f4 b18db9103bdf4fe2d884a080f677326e0be28e299322fcfdd8c28ea79643726d";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD8266461B45748A0085302A /* Sources */ = {
@@ -340,6 +369,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Money",
+				);
 				INFOPLIST_FILE = Money/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +383,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Money",
+				);
 				INFOPLIST_FILE = Money/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +446,7 @@
 				CD82666B1B45748A0085302A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD82666C1B45748A0085302A /* Build configuration list for PBXNativeTarget "MoneyTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +455,7 @@
 				CD82666E1B45748A0085302A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
